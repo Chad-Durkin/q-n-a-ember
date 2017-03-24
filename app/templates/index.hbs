@@ -1,11 +1,15 @@
-<div class="index">
+<div class="index-page">
     <div class="row index-header">
+        <h1>New Question</h1>
+        <hr>
+        {{new-question saveQuestion="saveQuestion"}}
+        <hr>
         <h1>Current Questions!</h1><br>
         <hr>
     </div>
     <div class="row">
         {{#each model.questions as |question|}}
-            {{question-list question=questions}}
+            {{question-list question=question}}
         {{/each}}
     </div>
 </div>

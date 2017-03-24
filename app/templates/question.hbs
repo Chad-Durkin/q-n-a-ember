@@ -10,8 +10,8 @@
     </div>
     <hr>
     <div class="row">
-        {{#each model.answers |answer|}}
-            <p><strong>{{answer.author}}</strong> - {{answer.content}}</p>
+        {{#each model.questions as |question|}}
+            <p><strong>{{question.author}}</strong> - {{question.content}}</p>
             <hr>
         {{/each}}
     </div>
