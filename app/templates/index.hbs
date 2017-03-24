@@ -8,8 +8,6 @@
         <hr>
     </div>
     <div class="row">
-        {{#each model.questions as |question|}}
-            {{question-list question=question}}
-        {{/each}}
+        {{question-list questions=model.questions}}
     </div>
 </div>
