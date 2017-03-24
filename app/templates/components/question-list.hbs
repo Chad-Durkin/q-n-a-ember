@@ -1,9 +1,12 @@
 {{#each questions as |question|}}
+  <div class="question-list row">
     {{#link-to 'question' question.id}}
-        <div class="question-list row">
-            <h1>Author: {{question.author}}</h1>
-            <h3>{{question.content}}</h3>
-            <hr>
-        </div>
+      <h1>Author: {{question.author}}</h1>
+      <h3>{{question.content}}</h3>
+      <hr>
     {{/link-to}}
+    {{#link-to 'update' question.id}}
+      <button>Update</button>
+    {{/link-to}}
+  </div>
 {{/each}}

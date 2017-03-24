@@ -1,0 +1,19 @@
+<h1>Edit Question</h1>
+<div class="update-question">
+  <form>
+    <div class="form-group">
+      <label for="author">Authors Name</label>
+      {{input value=model.author class="author" placeholder=model.author}}
+    </div>
+    <div class="form-group">
+      <label for="note">Note</label>
+      {{input value=model.note class="note" placeholder=model.note}}
+    </div>
+    <div class="form-group">
+      <label for="content">Edit Question</label>
+      {{input value=model.content class="content" placeholder=model.content}}
+    </div>
+
+    <button {{action 'update' model}}>Save</button>
+  </form>
+</div>

@@ -1,18 +1,20 @@
 <div class="question-content">
-    <div class="row">
-        <div class="col-md-9">
-            <h2>Author - {{model.question.author}}</h2>
-            <p>Question - {{model.question.content}}</p>
-        </div>
-        <div class="col-md-3">
-            <p>Notes: {{model.question.note}}</p>
-        </div>
+  <div class="row">
+    <div class="col-md-9">
+      <h2>Author - {{model.question.author}}</h2>
+      <p>Question - {{model.question.content}}</p>
     </div>
+    <div class="col-md-3">
+      <p>Notes: {{model.question.note}}</p>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <h2>Answers</h2>
     <hr>
-    <div class="row">
-        {{#each model.question.answers as |answer|}}
-            <p><strong>{{answer.author}}</strong> - {{answer.content}}</p>
-            <hr>
-        {{/each}}
-    </div>
+    {{#each model.question.answers as |answer|}}
+    <p><strong>{{answer.author}}</strong> - {{answer.content}}</p>
+    <hr>
+    {{/each}}
+  </div>
 </div>
