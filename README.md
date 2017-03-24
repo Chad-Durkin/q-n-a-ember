@@ -1,7 +1,7 @@
 # qna-board
 
 This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a question and answer web application using ember framework, the user can create questions with their name, and side notes, to go along with the question. On top of that, the users can respond to other users questions by adding a response and leaving their name/tag to identify them selves.
 
 ## Planning
 
@@ -11,6 +11,8 @@ A short introduction of this app could easily go here.
 2. Specs
     * Spec 1: Display all questions on home page
     * Spec 2: Allow user to create a question
+    * Spec 3: Allow user to update their question
+    * Spec 4: Allow users to respond to questions
 
 ## Prerequisites
 
