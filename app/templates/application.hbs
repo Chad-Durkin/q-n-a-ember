@@ -1,11 +1,11 @@
 <div class="container">
     <div class="jumbotron header">
         <header>
-            <h1>{{#link-to 'index'}}Q n A page!{{/link-to}}</h1>
+            {{#link-to 'index'}}<h1>Q n A page!</h1>{{/link-to}}
         </header>
     </div>
     {{outlet}}
     <footer class="footer">
-        <h3>{{#link-to 'about'}}About{{/link-to}} | {{#link-to 'contact'}}Contact{{/link-to}}</h3>
+        <h3>{{#link-to 'about'}}<span class="navfoot" >About</span>{{/link-to}} | {{#link-to 'contact'}}<span class="navfoot" >Contact</span>{{/link-to}} | {{#link-to 'index'}}<span class="navfoot" >Home</span>{{/link-to}}</h3>
     </footer>
 </div>

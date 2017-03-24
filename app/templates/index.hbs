@@ -1,13 +1,14 @@
 <div class="index-page">
   <div class="row index-header">
-    <h1>New Question</h1>
-    <hr>
-    {{new-question saveQuestion="saveQuestion"}}
-    <hr>
-    <h1>Current Questions!</h1><br>
-    <hr>
+    <div class="col-md-5 display-box-new">
+      <h1>New Question</h1>
+      {{new-question saveQuestion="saveQuestion"}}
+    </div>
+    <div class="col-md-7 display-box-current">
+      <h1 class="current-questions">Current Questions!</h1><br>
+      {{question-list questions=model.questions}}
+    </div>
   </div>
   <div class="row">
-    {{question-list questions=model.questions}}
   </div>
 </div>

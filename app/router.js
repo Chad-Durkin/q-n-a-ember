@@ -11,7 +11,6 @@ Router.map(function() {
   this.route('about');
   this.route('contact');
   this.route('update', {path: '/update/:question_id'});
-  // this.route('answer', {path: '/answer/:question_id'});
 });
 
 export default Router;
