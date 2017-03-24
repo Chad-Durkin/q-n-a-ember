@@ -3,6 +3,15 @@
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
+## Planning
+
+1. Configuration/dependencies
+    * 'ember-cli'
+
+2. Specs
+    * Spec 1: Display all questions on home page
+    * Spec 2: Allow user to create a question
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.

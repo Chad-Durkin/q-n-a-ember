@@ -1,1 +1,18 @@
-{{outlet}}
+<div class="question-content">
+    <div class="row">
+        <div class="col-md-9">
+            <h2>{{model.author}}</h2>
+            <p>{{model.content}}</p>
+        </div>
+        <div class="col-md-3">
+            <p>Notes: {{model.note}}</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        {{#each model.answers |answer|}}
+            <p><strong>{{answer.author}}</strong> - {{answer.content}}</p>
+            <hr>
+        {{/each}}
+    </div>
+</div>
